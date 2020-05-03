@@ -1,0 +1,10 @@
+{
+  "ignore": ["tools/*.js", "tests/*.js", "temp/*.*"],
+  "watch": [
+    ".env",
+    "*.js",
+    "*.json",
+    "**/*.js",
+    "**/*.json"
+  ]
+}

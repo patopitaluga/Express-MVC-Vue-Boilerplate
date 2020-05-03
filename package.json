@@ -1,0 +1,37 @@
+{
+  "name": "im",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "scripts": {
+    "build": "node node_modules/webpack-cli/bin/cli.js -p",
+    "cleanbuild": "rm -f public/dist/*.js public/dist/*.css || true",
+    "dev": "node node_modules/nodemon/bin/nodemon.js app/server dev",
+    "eslint": "eslint *.js src/**/*.js app/**/*.js controllers/*.js vue-components/**/*.vue vue-components/**/*.js views/**/*.html || true",
+    "sasslint": "node node_modules/sass-lint/bin/sass-lint.js -v || true",
+    "start": "node app/server || true",
+    "test": "node ./node_modules/mocha/bin/mocha tests",
+    "webpack": "node node_modules/webpack-cli/bin/cli.js -p"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "node-sass": "^4.14.0",
+    "nodemon": "^2.0.3",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.29.3",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  }
+}
